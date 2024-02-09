@@ -10,7 +10,7 @@ body {
 }
 .page-holder {
   position: relative;
-  height: 600svh;
+  height: 600dvh;
   max-height:600vh;
   width: 100dvw;
   background-color: black;
@@ -54,7 +54,7 @@ body {
 .content-parent-section {
   position: absolute;
   top: 0;
-  height: 600svh;
+  height: 600dvh;
 }
 
 .content-section {
