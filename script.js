@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function() {
       ease: "back.out(1.7)", // Use linear easing for less CPU usage
       scrollTrigger: {
         trigger: contentHolder,
-        start: 'bottom bottom-=35%',
+        start: 'bottom bottom-=45%',
         end: 'bottom top',
         scrub: true,
         invalidateOnRefresh: true, // Update animation on scroll changes
