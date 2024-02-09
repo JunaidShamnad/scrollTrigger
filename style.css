@@ -6,10 +6,12 @@
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
+  background-color: black;
 }
 .page-holder {
   position: relative;
   height: 600svh;
+  max-height:600vh;
   width: 100dvw;
   background-color: black;
 }
