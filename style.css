@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+.page-holder {
+  position: relative;
+  height: 600svh;
+  width: 100dvw;
+  background-color: black;
+}
+
+.video-parent-section {
+  position: sticky;
+  top: 0;
+  height: 100dvh;
+  width: 100dvw;
+  color: white;
+}
+
+.video-section,
+.video-container,
+.playing-video,
+.content-holder,
+.playing-video-tag {
+  height: 100%;
+  width: 100%;
+}
+
+.content-holder {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.playing-video {
+  background-size: cover;
+  background-position: center;
+}
+
+.playing-video-tag {
+  width: 100dvw;
+  height: 100dvh;
+  object-fit: cover;
+}
+
+.content-parent-section {
+  position: absolute;
+  top: 0;
+  height: 600svh;
+}
+
+.content-section {
+  height: 100dvh;
+  width: 100dvw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.212);
+}
+
+.content-section h2 {
+  font-weight: 500;
+  font-size: 35px;
+  color: white;
+}
+
+.content-section p {
+  font-weight: 300;
+  font-size: 22px;
+  color: white;
+  max-width: 60%;
+  line-height: 210%;
+  letter-spacing: 0.2px;
+}
+.content-section h4 {
+  font-weight: 400;
+  font-size: 28px;
+  color: white;
+  max-width: 60%;
+  line-height: 210%;
+  letter-spacing: 0.2px;
+}
+
+.list-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.list-holder ul{
+  font-weight: 300;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.856);
+  max-width: 60%;
+  line-height: 210%;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+
+/* Media queries for different screen sizes */
+
+@media only screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .content-section p {
+    max-width: 80%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* Adjust styles for even smaller screens */
+  .content-section {
+    flex-direction: column-reverse; /* Stack content vertically */
+  }
+  .content-section h2 {
+    font-size: 2rem;
+  }
+  .content-section h4 {
+    font-size: 1.2rem;
+  }
+  .content-section p {
+    font-size: 1rem;
+  }
+  .list-holder ul{
+    font-size: 0.8rem;
+  }
+
+}
